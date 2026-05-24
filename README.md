@@ -325,5 +325,3 @@ LDA bersifat stokastik (bergantung pada random seed), sehingga hasil dapat berva
 7. **Lee, D., & Seung, H. S. (1999)** — *Learning the parts of objects by non-negative matrix factorization*. Nature, 401, 788—791.
 
 ---
-
-*Dataset scraping Detik.com — 9 kategori berita — 7.164 artikel*
