@@ -1,7 +1,7 @@
 # Topic Modeling Berita Detik.com
 ### Perbandingan LDA, NMF, LSA, dan BERTopic
 
-> **Tugas Akhir / Penelitian NLP** — Implementasi topic modeling pada dataset berita berbahasa Indonesia hasil web scraping, dengan evaluasi menggunakan coherence score (c_v dan c_npmi).
+> **Tugas Topic Modeling** — Implementasi topic modeling pada dataset berita berbahasa Indonesia hasil web scraping, dengan evaluasi menggunakan coherence score (c_v dan c_npmi).
 
 ---
 
