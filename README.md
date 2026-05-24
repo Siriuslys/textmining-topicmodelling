@@ -3,34 +3,7 @@
 
 > **Tugas Topic Modeling** — Implementasi topic modeling pada dataset berita berbahasa Indonesia hasil web scraping, dengan evaluasi menggunakan coherence score (c_v dan c_npmi).
 
----
-
-## Daftar Isi
-
-- [Gambaran Umum](#gambaran-umum)
-- [Dataset](#dataset)
-- [Metode](#metode)
-- [Hasil Evaluasi](#hasil-evaluasi)
-- [Analisis Topik per Model](#analisis-topik-per-model)
-- [Topic Overlap Antar Model](#topic-overlap-antar-model)
-- [Analisis Noise BERTopic](#analisis-noise-bertopic)
-- [Stabilitas Model LDA](#stabilitas-model-lda)
-- [Struktur File](#struktur-file)
-- [Cara Menjalankan](#cara-menjalankan)
-- [Referensi](#referensi)
-
----
-
-## Gambaran Umum
-
-Penelitian ini mengimplementasikan dan membandingkan empat algoritma topic modeling pada korpus berita berbahasa Indonesia dari Detik.com. Topic modeling digunakan untuk menemukan tema-tema tersembunyi dalam kumpulan dokumen teks tanpa supervisi (unsupervised).
-
-**Tujuan penelitian:**
-- Mengidentifikasi topik-topik dominan dalam berita Indonesia secara otomatis
-- Membandingkan performa LDA, NMF, LSA, dan BERTopic secara kuantitatif (coherence score) dan kualitatif (interpretabilitas topik)
-- Menganalisis konsistensi topik yang ditemukan lintas model
-
----
+Tugas ini mengimplementasikan dan membandingkan empat algoritma topic modeling pada korpus berita berbahasa Indonesia dari Detik.com. Topic modeling digunakan untuk menemukan tema-tema tersembunyi dalam kumpulan dokumen teks tanpa supervisi (unsupervised).
 
 ## Dataset
 
