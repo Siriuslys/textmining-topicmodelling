@@ -1,6 +1,12 @@
 # Topic Modeling Berita Detik.com
 ### Perbandingan LDA, NMF, LSA, dan BERTopic
 
+| Nama | NRP |
+|---|---|
+| Mufrih Fakhir | 5025231248 |
+| Lathifah Sahda | 5025221059 |
+| Audrey Sasia Wijaya | 5025221055 |
+
 > **Tugas Topic Modeling** — Implementasi topic modeling pada dataset berita berbahasa Indonesia hasil web scraping, dengan evaluasi menggunakan coherence score (c_v dan c_npmi).
 
 Tugas ini mengimplementasikan dan membandingkan empat algoritma topic modeling pada korpus berita berbahasa Indonesia dari Detik.com. Topic modeling digunakan untuk menemukan tema-tema tersembunyi dalam kumpulan dokumen teks tanpa supervisi (unsupervised).
