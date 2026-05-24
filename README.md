@@ -113,6 +113,8 @@ Raw Text → Cleaning → Normalisasi → Stopword Removal → Stemming (Sastraw
 ---
 
 ## Hasil Evaluasi
+<img width="1589" height="1181" alt="1output" src="https://github.com/user-attachments/assets/9be6a5e0-92e5-4b0d-a9fa-df27eef71ad5" />
+
 
 ### Tabel Perbandingan Coherence Score
 
@@ -326,69 +328,7 @@ LDA bersifat stokastik (bergantung pada random seed), sehingga hasil dapat berva
 
 **Kesimpulan:** LDA menunjukkan **ketidakstabilan moderat** — range c_v sebesar 0.0634 antar seed cukup signifikan. Ini berarti hasil LDA (coherence = 0.5945 dengan seed=42) adalah hasil terbaik yang mungkin diperoleh, bukan nilai yang konsisten. Untuk penelitian yang membutuhkan reprodusibilitas, NMF atau BERTopic lebih disarankan karena deterministik (NMF) atau memiliki variance lebih rendah pada embedding yang sama (BERTopic).
 
----
 
-## Struktur File
-
-```
-topic-modeling-detik/
-│
-├── topic_modeling_notebook.ipynb   # Notebook utama (LDA, NMF, LSA, BERTopic)
-├── dataset_preprocessed.csv        # Dataset hasil scraping + preprocessing
-├── README.md                       # Dokumentasi ini
-│
-├── outputs/
-│   ├── pyldavis_output.html        # Visualisasi interaktif LDA
-│   ├── fig9_bertopic_barchart.html # Bar chart BERTopic (interaktif)
-│   ├── fig10_bertopic_distance_map.html  # Intertopic distance map
-│   │
-│   ├── fig1_lda_coherence.png      # Coherence plot LDA
-│   ├── fig2_lda_top_words.png      # Top words LDA per topik
-│   ├── fig3_lda_wordcloud.png      # Word cloud LDA
-│   ├── fig4_lda_dist_category.png  # Distribusi topik LDA per kategori
-│   ├── fig5_nmf_coherence.png      # Coherence plot NMF
-│   ├── fig6_nmf_top_words.png      # Top words NMF per topik
-│   ├── fig7_nmf_wordcloud.png      # Word cloud NMF
-│   ├── fig8_nmf_dist_category.png  # Distribusi topik NMF per kategori
-│   ├── fig_topic_overlap_heatmap.png   # Heatmap cosine similarity antar model
-│   ├── fig_noise_analysis.png          # Analisis noise BERTopic
-│   ├── fig_lda_stability.png           # Uji stabilitas LDA
-│   ├── fig_umap_2d.png                 # UMAP 2D scatter plot BERTopic
-│   └── fig_topic_per_kategori_4model.png  # Distribusi 4 model per kategori
-```
-
----
-
-## Cara Menjalankan
-
-### Prasyarat
-
-```bash
-pip install gensim scikit-learn pyLDAvis bertopic sentence-transformers \
-            umap-learn hdbscan wordcloud matplotlib seaborn plotly pandas numpy
-```
-
-### Langkah Menjalankan
-
-1. Pastikan file `dataset_preprocessed.csv` berada di direktori yang sama dengan notebook
-2. Buka `topic_modeling_notebook.ipynb` di Jupyter Notebook / JupyterLab
-3. Jalankan semua cell secara berurutan dari atas ke bawah
-4. Untuk **BERTopic**, diperlukan koneksi internet pada run pertama untuk mengunduh model `paraphrase-multilingual-MiniLM-L12-v2` (~120 MB) dari HuggingFace
-5. Model akan otomatis ter-cache setelah download pertama
-
-### Catatan Waktu Eksekusi (estimasi)
-
-| Tahap | Estimasi Waktu |
-|---|---|
-| LDA (k=5—15, passes=10) | ~6—8 menit |
-| NMF (k=5—15) | ~2—3 menit |
-| LSA (k=5—15) | ~1 menit |
-| BERTopic embedding (7.164 dok) | ~30 detik (CPU) |
-| BERTopic UMAP + HDBSCAN | ~1 menit |
-| UMAP 2D visualisasi | ~30 detik |
-| Uji stabilitas LDA (3 run) | ~3 menit |
-
----
 
 ## Referensi
 
