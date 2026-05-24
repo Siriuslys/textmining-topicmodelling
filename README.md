@@ -1,5 +1,4 @@
 # Topic Modeling Berita Detik.com
-### Perbandingan LDA, NMF, LSA, dan BERTopic
 
 | Nama | NRP |
 |---|---|
